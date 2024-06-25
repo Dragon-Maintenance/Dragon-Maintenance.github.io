@@ -3,8 +3,6 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <!-- SNS Link -->
-                {% include sns-links.html center=true %}
 
                 <p class="copyright text-muted">
                     Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}
@@ -21,21 +19,6 @@
         </div>
     </div>
 </footer>
-
-<!-- jQuery -->
-<script src="{{ " " | prepend: site.baseurl }}"></script>
-
-<!-- Custom Theme JavaScript -->
-<script src="{{ "" | prepend: site.baseurl }}"></script>
-
-<!-- Simple Jekyll Search -->
-<script src="{{ "" | prepend: site.baseurl }}"></script>
-
-<!-- Service Worker -->
-{% if site.service-worker %}
-<script src="{{ "/js/snackbar.js " | prepend: site.baseurl }}"></script>
-<script src="{{ "/js/sw-registration.js " | prepend: site.baseurl }}"></script>
-{% endif %}
 
 <!-- async load function -->
 <script>
